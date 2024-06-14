@@ -1,4 +1,4 @@
 FROM nginxproxy/nginx-proxy:1.5
 
 
-COPY bg2b.conf /etc/nginx/conf.d/bg2b.conf
+COPY fox7.conf /etc/nginx/conf.d/fox7.conf
