@@ -39,7 +39,6 @@ services:
       - vhost:/etc/nginx/vhost.d
       - html:/usr/share nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
-
     depends_on:
       - bg2b
     ports:
