@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
 
-  go:
+  bg2b:
     build:
       context: .
     container_name: GO
@@ -40,7 +40,7 @@ services:
       - html:/usr/share nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
     depends_on:
-      - bg2b
+      - go
     ports:
       - "80:80"
       - "443:443"
