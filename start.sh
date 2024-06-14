@@ -1,6 +1,11 @@
 #!/bin/sh
 
-python manage.py migrate
+until python manage.py migrate
+do
+    echo "Database preparation..."
+    sleep 10
+
+done
 python manage.py collectstatic --noinput
 
 gunicorn --bind 0.0.0.0:8000 bg2b.wsgi
