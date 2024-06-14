@@ -8,11 +8,11 @@ services:
     env_file:
       - .env
 
-  bg2b:
+  go:
     build:
       context: .
-    container_name: BG2B
-    image: bg2b
+    container_name: GO
+    image: go
     restart: always
     entrypoint: /bg2b/start.sh
     depends_on:
