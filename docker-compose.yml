@@ -11,8 +11,8 @@ services:
   bg2b:
     build:
       context: .
-    container_name: GO
-    image: go
+    container_name: BG2B
+    image: bg2b
     restart: always
     entrypoint: /bg2b/start.sh
     depends_on:
