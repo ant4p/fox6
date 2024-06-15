@@ -1,5 +1,5 @@
 """
-WSGI config for bg2b project.
+WSGI config for fox6 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bg2b.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fox6.settings')
 
 application = get_wsgi_application()

@@ -1,5 +1,5 @@
 """
-URL configuration for bg2b project.
+URL configuration for fox6 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path
 
 from bg.views import ShowPage
-from bg2b import settings
+from fox6 import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),

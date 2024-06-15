@@ -8,4 +8,4 @@ do
 done
 python manage.py collectstatic --noinput
 
-gunicorn --bind 0.0.0.0:8000 bg2b.wsgi
+gunicorn --bind 0.0.0.0:8000 fox6.wsgi

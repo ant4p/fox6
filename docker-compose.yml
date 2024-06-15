@@ -4,22 +4,22 @@ services:
     container_name: DB
     restart: always
     volumes:
-      - ~/.pg.pg_data/bg2b:/var/lib/postgresql/data
+      - ~/.pg.pg_data/fox6:/var/lib/postgresql/data
     env_file:
       - .env
 
-  bg2b:
+  fox6:
     build:
       context: .
-    container_name: bg2b
-    image: bg2b
+    container_name: fox6
+    image: fox6
     restart: always
-    entrypoint: /bg2b/start.sh
+    entrypoint: /fox6/start.sh
     depends_on:
       - db
     volumes:
-      - static:/bg2b/static
-      - media:/bg2b/media
+      - static:/fox6/static
+      - media:/fox6/media
     env_file:
       - .env
     environment:
@@ -33,14 +33,14 @@ services:
     container_name: NGINX
     restart: always
     volumes:
-      - static:/bg2b/static
-      - media:/bg2b/media
+      - static:/fox6/static
+      - media:/fox6/media
       - certs:/etc/nginx/certs
       - vhost:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
     depends_on:
-      - bg2b
+      - fox6
     ports:
       - "80:80"
       - "443:443"
