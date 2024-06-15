@@ -2,7 +2,7 @@
 
 until python manage.py migrate
 do
-    echo "Database preparation..."
+    echo "..."
     sleep 10
 
 done
