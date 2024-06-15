@@ -4,9 +4,7 @@ WORKDIR /bg2b
 
 COPY ./requirements.txt .
 
-RUN pip install requirements.txt
-RUN pip install gunicorn
-RUN pip install psycopg2-binary
+RUN pip install --no-cache-dir -r requirements.txt && pip install gunicorn && pip install psycopg2-binary
 
 RUN apt update
 
