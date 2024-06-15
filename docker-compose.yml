@@ -11,7 +11,7 @@ services:
   bg2b:
     build:
       context: .
-    container_name: BG2B
+    container_name: bg2b
     image: bg2b
     restart: always
     entrypoint: /bg2b/start.sh
