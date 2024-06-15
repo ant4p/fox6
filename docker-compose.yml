@@ -37,7 +37,7 @@ services:
       - media:/bg2b/media
       - certs:/etc/nginx/certs
       - vhost:/etc/nginx/vhost.d
-      - html:/usr/share nginx/html
+      - html:/usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
     depends_on:
       - bg2b
