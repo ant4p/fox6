@@ -1,7 +1,7 @@
 location /static/ {
-    alias /fox6/static/;
+    alias /bg2b/static/;
 }
 
 location /media/ {
-    alias /fox6/media/;
+    alias /bg2b/media/;
 }
