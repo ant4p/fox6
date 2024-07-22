@@ -6,3 +6,4 @@ from django.views.generic import TemplateView
 
 class ShowPage(TemplateView):
     template_name = 'bg/index.html'
+
