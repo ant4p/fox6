@@ -1,7 +1,0 @@
-location /static/ {
-    alias /bg2b/static/;
-}
-
-location /media/ {
-    alias /bg2b/media/;
-}
