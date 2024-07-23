@@ -14,7 +14,7 @@ services:
     container_name: fox6
     image: fox6
     restart: always
-    entrypoint: /bg2b/start.sh
+    entrypoint: /fox6/start.sh
     depends_on:
       - db
     volumes:
