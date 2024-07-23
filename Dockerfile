@@ -1,6 +1,6 @@
 FROM python:3.11.0-slim
 
-WORKDIR /bg2b
+WORKDIR /fox6
 
 COPY ./requirements.txt .
 
@@ -14,6 +14,6 @@ COPY . .
 
 EXPOSE 8000
 
-RUN chmod a+x /bg2b/start.sh
+RUN chmod a+x /fox6/start.sh
 
 ENTRYPOINT ["./start.sh"]
