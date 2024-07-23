@@ -35,7 +35,7 @@ services:
     volumes:
       - static:/fox6/static
       - media:/fox6/media
-      - certs:/etc/nginx/certs
+      - certs:/etc/nginx/certs:ro
       - vhost:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
@@ -53,7 +53,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - acme:/etc/acme.sh
-      - certs:/etc/nginx/certs
+      - certs:/etc/nginx/certs:rw
 
 volumes:
   static:

@@ -1,0 +1,7 @@
+location /static/ {
+    alias /fox6/static/;
+}
+
+location /media/ {
+    alias /fox6/media/;
+}
